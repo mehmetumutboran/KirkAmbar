@@ -4,6 +4,12 @@
 #include <stdint.h>
 #include "objects.h"
 
+typedef union{
+    uint8_t u8[8];
+    uint16_t u16[4];
+    uint32_t u32[2];
+} Obj_bytes_t;
+
 typedef enum{
     OBJ_ERR_SUCCESS = 0x0000,
     OBJ_ERR_NO_INDEX = 0x0002,
