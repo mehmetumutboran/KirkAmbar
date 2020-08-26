@@ -1,6 +1,8 @@
 #ifndef OBJECTS_H
 #define OBJECTS_H
 
+#define NOF_INDEX_ARRAY 6
+
 #include <stdint.h>
 
 /***** Sub-indexes variables structure ********************************************/
@@ -28,5 +30,25 @@ typedef struct{
     /*0x2000*/ uint16_t value_3;
     /*0x2001*/ uint8_t value_4;
 } objects_t;
+
+typedef struct{
+    uint16_t index;
+    uint8_t nof_SubIndex;
+    uint8_t attr;
+    uint16_t length;
+    void* data;
+} Obj_index_t;
+
+typedef struct{
+    void* data;
+    uint16_t attr;
+    uint16_t length;
+} Obj_subIndex_t;
+
+typedef enum{
+    OBJ_WRITEABLE        = 0x0001U,
+    OBJ_READABLE         = 0x0002U,
+}obj_attr_t;
+
 
 #endif // OBJECTS_H
