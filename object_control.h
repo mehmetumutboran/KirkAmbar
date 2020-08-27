@@ -40,4 +40,12 @@ Obj_Error_Code obj_read(Obj_control_t* control, uint16_t index, uint8_t subIndex
 
 Obj_Error_Code obj_write(Obj_control_t *control , uint16_t index, uint8_t subIndex);
 
+uint32_t Obj_getUint32(const uint8_t data[]);
+
+uint16_t Obj_getUint16(const uint8_t data[]);
+
+void Obj_setUint32(uint8_t data[], const uint32_t value);
+
+void Obj_setUint16(uint8_t data[], const uint16_t value);
+
 #endif // OBJECT_CONTROL_H
