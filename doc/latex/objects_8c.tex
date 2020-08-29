@@ -1,0 +1,89 @@
+\hypertarget{objects_8c}{}\doxysection{objects.\+c File Reference}
+\label{objects_8c}\index{objects.c@{objects.c}}
+{\ttfamily \#include \char`\"{}objects.\+h\char`\"{}}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structobjects__t}{objects\+\_\+t}} \mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}
+\item 
+const \mbox{\hyperlink{struct_obj__sub_index__t}{Obj\+\_\+sub\+Index\+\_\+t}} \mbox{\hyperlink{objects_8c_a3c2d7b77e02ee3fc3faf97a9a270da65}{L\+E\+D\+\_\+\+Service\+\_\+1000}} \mbox{[}5\mbox{]}
+\item 
+const \mbox{\hyperlink{struct_obj__sub_index__t}{Obj\+\_\+sub\+Index\+\_\+t}} \mbox{\hyperlink{objects_8c_a7a6c1dc4e68ad043c392b7a854375019}{P\+W\+M\+\_\+\+Service\+\_\+1001}} \mbox{[}4\mbox{]}
+\item 
+const \mbox{\hyperlink{struct_obj__index__t}{Obj\+\_\+index\+\_\+t}} \mbox{\hyperlink{objects_8c_a5345d5e16348f9f19702a229213ddab0}{index\+\_\+objects}} \mbox{[}N\+O\+F\+\_\+\+I\+N\+D\+E\+X\+\_\+\+A\+R\+R\+AY\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{objects_8c_a5345d5e16348f9f19702a229213ddab0}\label{objects_8c_a5345d5e16348f9f19702a229213ddab0}} 
+\index{objects.c@{objects.c}!index\_objects@{index\_objects}}
+\index{index\_objects@{index\_objects}!objects.c@{objects.c}}
+\doxysubsubsection{\texorpdfstring{index\_objects}{index\_objects}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_obj__index__t}{Obj\+\_\+index\+\_\+t}} index\+\_\+objects\mbox{[}N\+O\+F\+\_\+\+I\+N\+D\+E\+X\+\_\+\+A\+R\+R\+AY\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{0x1000, 0x05, 0x0, 0, (\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_a3c2d7b77e02ee3fc3faf97a9a270da65}{LED\_Service\_1000}}\},}
+\DoxyCodeLine{    \{0x1001, 0x04, 0x0, 0, (\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_a7a6c1dc4e68ad043c392b7a854375019}{PWM\_Service\_1001}}\},}
+\DoxyCodeLine{    \{0x1002, 0x00, (OBJ\_READABLE + OBJ\_WRITEABLE), 4, (\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.value\_1\},}
+\DoxyCodeLine{    \{0x1003, 0x00, OBJ\_READABLE, 4, (\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.value\_2\},}
+\DoxyCodeLine{    \{0x2000, 0x00, (OBJ\_READABLE + OBJ\_WRITEABLE), 2, (\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.value\_3\},}
+\DoxyCodeLine{    \{0x2001, 0x00, (OBJ\_READABLE + OBJ\_WRITEABLE), 1, (\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.value\_4\},}
+\DoxyCodeLine{    \{0x2002, 0x00, (OBJ\_WRITEABLE), 1, (\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.value\_5\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Definition of all the objects that are used in this program \mbox{\Hypertarget{objects_8c_a3c2d7b77e02ee3fc3faf97a9a270da65}\label{objects_8c_a3c2d7b77e02ee3fc3faf97a9a270da65}} 
+\index{objects.c@{objects.c}!LED\_Service\_1000@{LED\_Service\_1000}}
+\index{LED\_Service\_1000@{LED\_Service\_1000}!objects.c@{objects.c}}
+\doxysubsubsection{\texorpdfstring{LED\_Service\_1000}{LED\_Service\_1000}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_obj__sub_index__t}{Obj\+\_\+sub\+Index\+\_\+t}} L\+E\+D\+\_\+\+Service\+\_\+1000\mbox{[}5\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{(\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.LED\_Service.noSubIndex, OBJ\_READABLE, 1\},}
+\DoxyCodeLine{    \{(\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.LED\_Service.LED1, (OBJ\_READABLE + OBJ\_WRITEABLE), 1\},}
+\DoxyCodeLine{    \{(\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.LED\_Service.LED2, (OBJ\_READABLE + OBJ\_WRITEABLE), 1\},}
+\DoxyCodeLine{    \{(\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.LED\_Service.LED3, (OBJ\_READABLE + OBJ\_WRITEABLE), 1\},}
+\DoxyCodeLine{    \{(\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.LED\_Service.LED4, (OBJ\_READABLE + OBJ\_WRITEABLE), 1\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Definition of sub\+Index objects of L\+E\+D\+\_\+\+Service index object \mbox{\Hypertarget{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}\label{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}} 
+\index{objects.c@{objects.c}!objects@{objects}}
+\index{objects@{objects}!objects.c@{objects.c}}
+\doxysubsubsection{\texorpdfstring{objects}{objects}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structobjects__t}{objects\+\_\+t}} objects}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{     \{0x4, 0x0, 0x0, 0x0, 0x0\},}
+\DoxyCodeLine{     \{0x3, 0x0, 0x0, 0x0\},}
+\DoxyCodeLine{     0x100,}
+\DoxyCodeLine{     0x200,}
+\DoxyCodeLine{     0x50,}
+\DoxyCodeLine{     0x10,}
+\DoxyCodeLine{     0x20}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+All objects Set to their default values \mbox{\Hypertarget{objects_8c_a7a6c1dc4e68ad043c392b7a854375019}\label{objects_8c_a7a6c1dc4e68ad043c392b7a854375019}} 
+\index{objects.c@{objects.c}!PWM\_Service\_1001@{PWM\_Service\_1001}}
+\index{PWM\_Service\_1001@{PWM\_Service\_1001}!objects.c@{objects.c}}
+\doxysubsubsection{\texorpdfstring{PWM\_Service\_1001}{PWM\_Service\_1001}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_obj__sub_index__t}{Obj\+\_\+sub\+Index\+\_\+t}} P\+W\+M\+\_\+\+Service\+\_\+1001\mbox{[}4\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{(\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.PWM\_Service.noSubIndex, OBJ\_READABLE, 1\},}
+\DoxyCodeLine{    \{(\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.PWM\_Service.CH1\_Duty, (OBJ\_READABLE + OBJ\_WRITEABLE), 1\},}
+\DoxyCodeLine{    \{(\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.PWM\_Service.CH2\_Duty, (OBJ\_READABLE + OBJ\_WRITEABLE), 1\},}
+\DoxyCodeLine{    \{(\textcolor{keywordtype}{void}*)\&\mbox{\hyperlink{objects_8c_aa4483f4b60afc6ac101298579efe3ec9}{objects}}.PWM\_Service.PWM\_Status, (OBJ\_READABLE + OBJ\_WRITEABLE), 2\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Definition of sub\+Index objects of P\+W\+M\+\_\+\+Service index object 

@@ -1,0 +1,135 @@
+\hypertarget{object__control_8c}{}\doxysection{object\+\_\+control.\+c File Reference}
+\label{object__control_8c}\index{object\_control.c@{object\_control.c}}
+{\ttfamily \#include \char`\"{}object\+\_\+control.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{object__control_8c_afcc1f766bf248e0a886fee498d962bb4}{Obj\+\_\+get\+Uint32}} (const uint8\+\_\+t data\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Obj\+\_\+get\+Uint32 To convert the 8 bit integer data array to a 32 bit integer value. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{object__control_8c_a8a91e7a3c6dc76d2dc71c7610b6be822}{Obj\+\_\+get\+Uint16}} (const uint8\+\_\+t data\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Obj\+\_\+get\+Uint16 To convert the 8 bit integer data array to a 16 bit integer value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{object__control_8c_a867711d7a2c822759ad035b1572f70ab}{Obj\+\_\+set\+Uint32}} (uint8\+\_\+t data\mbox{[}$\,$\mbox{]}, const uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Obj\+\_\+set\+Uint32 To set the 8 bit integer data array with coming 32 bit integer value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{object__control_8c_ac0866beeb88632b2f94dc67a8832dd52}{Obj\+\_\+set\+Uint16}} (uint8\+\_\+t data\mbox{[}$\,$\mbox{]}, const uint16\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Obj\+\_\+set\+Uint16 To set the 8 bit integer data array with coming 16 bit integer value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{object__control_8h_ab3ea050c4d4928094c041b90e79ac2de}{Obj\+\_\+\+Error\+\_\+\+Code}} \mbox{\hyperlink{object__control_8c_a034038a9303c12c9f8cb645e9deea86e}{obj\+\_\+read}} (\mbox{\hyperlink{struct_obj__control__t}{Obj\+\_\+control\+\_\+t}} $\ast$control, uint16\+\_\+t index, uint8\+\_\+t sub\+Index)
+\begin{DoxyCompactList}\small\item\em obj\+\_\+read Main function to read a target object in the memory \end{DoxyCompactList}\item 
+\mbox{\hyperlink{object__control_8h_ab3ea050c4d4928094c041b90e79ac2de}{Obj\+\_\+\+Error\+\_\+\+Code}} \mbox{\hyperlink{object__control_8c_aced665d65fe5fea30e5611b1efb99bf5}{obj\+\_\+write}} (\mbox{\hyperlink{struct_obj__control__t}{Obj\+\_\+control\+\_\+t}} $\ast$control, uint16\+\_\+t index, uint8\+\_\+t sub\+Index)
+\begin{DoxyCompactList}\small\item\em obj\+\_\+write Main function to write to a target object in the memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{object__control_8c_a8a91e7a3c6dc76d2dc71c7610b6be822}\label{object__control_8c_a8a91e7a3c6dc76d2dc71c7610b6be822}} 
+\index{object\_control.c@{object\_control.c}!Obj\_getUint16@{Obj\_getUint16}}
+\index{Obj\_getUint16@{Obj\_getUint16}!object\_control.c@{object\_control.c}}
+\doxysubsubsection{\texorpdfstring{Obj\_getUint16()}{Obj\_getUint16()}}
+{\footnotesize\ttfamily uint16\+\_\+t Obj\+\_\+get\+Uint16 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{data\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Obj\+\_\+get\+Uint16 To convert the 8 bit integer data array to a 16 bit integer value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 8 bit integer array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+16 bit integer value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object__control_8c_afcc1f766bf248e0a886fee498d962bb4}\label{object__control_8c_afcc1f766bf248e0a886fee498d962bb4}} 
+\index{object\_control.c@{object\_control.c}!Obj\_getUint32@{Obj\_getUint32}}
+\index{Obj\_getUint32@{Obj\_getUint32}!object\_control.c@{object\_control.c}}
+\doxysubsubsection{\texorpdfstring{Obj\_getUint32()}{Obj\_getUint32()}}
+{\footnotesize\ttfamily uint32\+\_\+t Obj\+\_\+get\+Uint32 (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{data\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Obj\+\_\+get\+Uint32 To convert the 8 bit integer data array to a 32 bit integer value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 8 bit integer array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+32 bit integer value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object__control_8c_a034038a9303c12c9f8cb645e9deea86e}\label{object__control_8c_a034038a9303c12c9f8cb645e9deea86e}} 
+\index{object\_control.c@{object\_control.c}!obj\_read@{obj\_read}}
+\index{obj\_read@{obj\_read}!object\_control.c@{object\_control.c}}
+\doxysubsubsection{\texorpdfstring{obj\_read()}{obj\_read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{object__control_8h_ab3ea050c4d4928094c041b90e79ac2de}{Obj\+\_\+\+Error\+\_\+\+Code}} obj\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_obj__control__t}{Obj\+\_\+control\+\_\+t}} $\ast$}]{control,  }\item[{uint16\+\_\+t}]{index,  }\item[{uint8\+\_\+t}]{sub\+Index }\end{DoxyParamCaption})}
+
+
+
+obj\+\_\+read Main function to read a target object in the memory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & The object that stores all the needed information to locate the target object \\
+\hline
+{\em index} & The index of the target object \\
+\hline
+{\em sub\+Index} & The sub\+Index number of the target object (if the target object is an index object than this will be 0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Appropriate Obj\+\_\+\+Err\+\_\+\+Code enum showing the result of reading process 
+\end{DoxyReturn}
+\mbox{\Hypertarget{object__control_8c_ac0866beeb88632b2f94dc67a8832dd52}\label{object__control_8c_ac0866beeb88632b2f94dc67a8832dd52}} 
+\index{object\_control.c@{object\_control.c}!Obj\_setUint16@{Obj\_setUint16}}
+\index{Obj\_setUint16@{Obj\_setUint16}!object\_control.c@{object\_control.c}}
+\doxysubsubsection{\texorpdfstring{Obj\_setUint16()}{Obj\_setUint16()}}
+{\footnotesize\ttfamily void Obj\+\_\+set\+Uint16 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data\mbox{[}$\,$\mbox{]},  }\item[{const uint16\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Obj\+\_\+set\+Uint16 To set the 8 bit integer data array with coming 16 bit integer value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 8 bit integer data array to be set \\
+\hline
+{\em value} & 16 bit integer value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{object__control_8c_a867711d7a2c822759ad035b1572f70ab}\label{object__control_8c_a867711d7a2c822759ad035b1572f70ab}} 
+\index{object\_control.c@{object\_control.c}!Obj\_setUint32@{Obj\_setUint32}}
+\index{Obj\_setUint32@{Obj\_setUint32}!object\_control.c@{object\_control.c}}
+\doxysubsubsection{\texorpdfstring{Obj\_setUint32()}{Obj\_setUint32()}}
+{\footnotesize\ttfamily void Obj\+\_\+set\+Uint32 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data\mbox{[}$\,$\mbox{]},  }\item[{const uint32\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+Obj\+\_\+set\+Uint32 To set the 8 bit integer data array with coming 32 bit integer value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 8 bit integer data array to be set \\
+\hline
+{\em value} & 32 bit integer value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{object__control_8c_aced665d65fe5fea30e5611b1efb99bf5}\label{object__control_8c_aced665d65fe5fea30e5611b1efb99bf5}} 
+\index{object\_control.c@{object\_control.c}!obj\_write@{obj\_write}}
+\index{obj\_write@{obj\_write}!object\_control.c@{object\_control.c}}
+\doxysubsubsection{\texorpdfstring{obj\_write()}{obj\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{object__control_8h_ab3ea050c4d4928094c041b90e79ac2de}{Obj\+\_\+\+Error\+\_\+\+Code}} obj\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_obj__control__t}{Obj\+\_\+control\+\_\+t}} $\ast$}]{control,  }\item[{uint16\+\_\+t}]{index,  }\item[{uint8\+\_\+t}]{sub\+Index }\end{DoxyParamCaption})}
+
+
+
+obj\+\_\+write Main function to write to a target object in the memory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em control} & The object that stores all the needed information to locate the target object \\
+\hline
+{\em index} & The index of the target object \\
+\hline
+{\em sub\+Index} & The sub\+Index number of the target object (if the target object is an index object than this will be 0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Appropriate Obj\+\_\+\+Err\+\_\+\+Code enum showing the result of writing process 
+\end{DoxyReturn}
